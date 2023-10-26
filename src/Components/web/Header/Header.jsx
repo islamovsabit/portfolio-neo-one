@@ -10,22 +10,7 @@ import { BiMoon } from 'react-icons/bi'
 import { useTheme } from '@/app/context/Context_alisa'
 
 export default function Header() {
-    
     const { dayMoon, clickBtn } = useTheme();
-    
-    // const [dayMoon, setDayMoon] = useState(() => {
-    //     const storedPreference = localStorage.getItem('themePreference');
-    //     return storedPreference === 'night';
-    // });
-    // const clickBtn = () => {
-    //     const newDayMoon = !dayMoon;
-    //     setDayMoon(newDayMoon);
-    //     localStorage.setItem('themePreference', newDayMoon ? 'night' : 'day');
-    //     document.body.style.background = newDayMoon ? '#24272C' : '#E6E7EE';
-    // };
-    // useEffect(() => {
-    //     document.body.style.background = dayMoon ? '#24272C' : '#E6E7EE';
-    // }, [dayMoon]);
     
     return (
         <header className={styled.main}>

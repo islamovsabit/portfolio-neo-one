@@ -23,8 +23,7 @@ import { format } from 'date-fns';
 
 
 export default function Home() {
-    // console.log(params);
-
+    
     const {
         dayMoon,
         // open close

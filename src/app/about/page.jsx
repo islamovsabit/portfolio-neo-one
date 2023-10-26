@@ -33,7 +33,7 @@ export default function Page() {
         form,
         sendMail
     } = useTheme();
-    console.log(dayMoon);
+
 
     const [biography, setBiography] = useState([])
     const [loading, setLoading] = useState(true);

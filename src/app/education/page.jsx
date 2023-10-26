@@ -52,8 +52,6 @@ export default function Page() {
             });
     }, [])
 
-
-    console.log(skills);
     const skills_data = skills.map((item) => {
         return (
             <li className={styled.skills_content_item} key={item.id}>
