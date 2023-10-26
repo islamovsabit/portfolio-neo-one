@@ -9,10 +9,9 @@ import { BiUserCircle } from 'react-icons/bi'
 import { BsPhoneFill } from 'react-icons/bs'
 import { MdOutlineEmail } from 'react-icons/md'
 import { useTheme } from '../context/Context'
-import { format } from 'date-fns';
 
 import { useEffect, useState } from 'react';
-import AOS from 'aos';
+
 import Link from 'next/link'
 
 export default function Page() {
@@ -60,9 +59,6 @@ export default function Page() {
             </li>
         )
     })
-
-
-    AOS.init();
 
     return (
         <>
