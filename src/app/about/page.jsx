@@ -137,7 +137,7 @@ export default function Page() {
                     <div className={styled.next_handler_content}>{portfolio_data}
                         <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`}>
                             <div className={`${styled.next_handler_content_list_item_more_blog}  ${dayMoon ? styled.main_content_box_shadow_inset_active : ""}`}>
-                                <Link href="portfolio" className={`${styled.next_handler_content_list_item_more} ${dayMoon ? styled.main_content_btn_active : ""}`}>More</Link>
+                                <Link href="/portfolio" className={`${styled.next_handler_content_list_item_more} ${dayMoon ? styled.main_content_btn_active : ""}`}>More</Link>
                             </div>
                         </div>
 

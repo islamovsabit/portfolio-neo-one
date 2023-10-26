@@ -78,18 +78,18 @@ export default function Home() {
                         <h1 className={`${styled.main_content_name_title} ${dayMoon ? styled.text_color : ""}`}>Islamov Sabit</h1>
                         <ul className={styled.main_content_direction_list}>
                             <li className={styled.main_content_direction_item}>
-                                <Link href="" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Frontend</Link>
+                                <Link href="#!" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Frontend</Link>
                             </li>
                             <li className={styled.main_content_direction_item}>
-                                <Link href="" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Backend</Link>
+                                <Link href="#!" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Backend</Link>
                             </li>
                             <li className={styled.main_content_direction_item}>
-                                <Link href="" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Design</Link>
+                                <Link href="#!" className={`${styled.main_content_direction_link} ${dayMoon ? styled.text_color : ""}`}>Design</Link>
                             </li>
                         </ul>
                         <div className={styled.main_content_btn_group}>
                                 <button className={`${styled.main_content_btn} ${dayMoon ? styled.main_content_btn_active : ""}`}>Download</button>
-                            <Link href="contact">
+                            <Link href="/contact">
                                 <button className={`${styled.main_content_btn} ${dayMoon ? styled.main_content_btn_active : ""}`}>Contact</button>
                             </Link>
                         </div>
