@@ -1,0 +1,38 @@
+@import "@/app/scss/Root_alisa";
+.swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets{
+    right: var(--swiper-pagination-right, auto) !important;
+    left: var(--swiper-pagination-left, 8px) !important;
+}
+
+.swiper-slide{
+    transition: 0.4s !important;
+    width: 800px !important;
+    height: 400px !important;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: $background_day;
+    box-shadow: $box_inset_shadow_day;
+    padding: 40px 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    width: 20px !important;
+}
+
+.swiper-pagination-bullet{
+    background: $background_night !important;
+    width: 20px !important;
+    height: 20px !important;
+    transition: 0.4s !important;
+}
+
+
+label{
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -1,0 +1,243 @@
+@import "../../../app/scss/Root.scss";
+
+.main{
+    width: 100%;
+    padding: 25px 0;
+}
+.main_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_content_left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 66px;
+}
+.main_content_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main_logo_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;    
+    background: $background_day;
+    box-shadow: $box_shadow_day;
+    
+    font-weight: 700;
+    font-size: $font_size_26;
+    color: $color_day;
+    transition: 0.4s;
+    
+    &:hover{
+        box-shadow: $box_inset_shadow_day;
+        
+    }
+    &:active{
+        transform: scale(0.90);
+    }
+    
+    
+}
+.main_logo_link_active{
+    background: $background_night;
+    box-shadow: $box_shadow_night;
+    color:$color_night;
+    transition: 0.4s;
+    
+    &:hover{
+        box-shadow: $box_inset_shadow_night;
+    }
+}
+
+.main_content_left_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.main_content_left_link{
+    font-weight: 700;
+    font-size: 16px;
+    color: $color_day;
+    transition: 0.4s;
+}
+.main_content_left_link_active{
+    color: $color_night;
+}
+
+
+
+/* right */
+
+.main_content_right_list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 40px;
+    gap: 15px;
+}
+.main_content_right_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $background_day;
+    box-shadow: $box_shadow_day;
+    transition: 0.4s;
+    
+    &:hover{
+        box-shadow: $box_inset_shadow_day;
+        
+    }
+    &:active{
+        transform: scale(0.90);
+    }
+    
+}
+
+.main_content_right_link_active{
+    background: $background_night;
+    box-shadow: $box_shadow_night;
+    transition: 0.4s;
+    
+    &:hover{
+        box-shadow: $box_inset_shadow_night;
+        
+    }
+}
+
+
+.main_content_right_link_icon{
+    font-size: 18px;
+    color: $color_day;
+    transition: 0.4s;
+}
+.main_content_right_link_icon_active{
+    color: $color_night;
+    transition: 0.4s;
+}
+
+
+.main_content_right_btn_theme{
+    width: 84px;
+    height: 40px;
+    border-radius: 10px;
+    border:0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.40) 0%, rgba(255, 255, 255, 0.40) 100%), #E6E7EE;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -3px -3px 6px 0px #FFF, 3px 3px 6px 0px #B8B9BE;
+    transition: 0.4s;
+    
+    &:hover{
+        cursor: pointer;
+        box-shadow: $box_inset_shadow_day;
+    }
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    // &:active{
+    //     transform: scale(0.90);
+    // }
+}
+
+.btn_active{
+    background: $background_night;
+    box-shadow:$box_shadow_night;
+    transition: 0.4s;
+    
+    &:hover{
+        cursor: pointer;
+        box-shadow:$box_inset_shadow_night;
+    }
+}
+
+.main_content_right_btn_theme_icon{
+    width: 28px;
+    height: 28px;
+    background: $background_night;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.icon_active{
+    background: $background_day;
+    margin-left: 44px;
+}
+
+
+.main_content_right_btn_theme_day{
+    color: $color_night;
+    font-size: 16px;
+    position: relative;
+    transition: 0.4s;
+    opacity: 1;
+}
+.theme_day_active{
+    position: absolute;
+    opacity: 0;
+}
+.main_content_right_btn_theme_moon{
+    color: $color_night;
+    font-size: 16px;
+    transition: 0.4s;
+    position: absolute;
+    opacity: 0;
+}
+.theme_moon_active{
+    position: relative;
+    opacity: 1;
+    color: $color_day;
+}
+
+.main_content_right_btn_library{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    background: #E6E7EE;
+    border: none;
+    box-shadow: $box_shadow_day;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 25px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    color: #24272C;
+    
+    transition: 0.4s;
+    
+    &:hover{
+        cursor: pointer;
+        box-shadow: $box_inset_shadow_day;
+    }
+}
+.library_link_active{
+    background: $background_night;
+    box-shadow:$box_shadow_night;
+    transition: 0.4s;
+    color: #E6E7EE;
+    
+    &:hover{
+        cursor: pointer;
+        box-shadow:$box_inset_shadow_night;
+    }
+}
