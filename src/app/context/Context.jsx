@@ -88,9 +88,16 @@ export function ThemeProvider({ children }) {
 
         emailjs.sendForm(service, template, form.current, public_key)
             .then((result) => {
-                console.log(result.text);
+                setUserName(" "); setUserEmail(" "); setUserMessage(" ");
+                document.getElementById('check-right').classList.add('active')
+                setTimeout(() => {
+                    document.getElementById('check-right').classList.remove('active')
+                }, 3000);
             }, (error) => {
-                console.log(error.text);
+                document.getElementById('check-error').classList.add('active')
+                setTimeout(() => {
+                    document.getElementById('check-error').classList.remove('active')
+                }, 3000);
             });
     };
 

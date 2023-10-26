@@ -25,7 +25,10 @@ export default function Page() {
             dayMoon,
             userName,
             userEmail,
-            userMessage, 
+            userMessage,
+            
+            form,
+            sendMail
     } = useTheme();
     return (
         <>
@@ -101,7 +104,7 @@ export default function Page() {
             </section>
             <section className={styled.next_form_section}>
                 <div className="container-main">
-                    <form action="" onSubmit={sendEmail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`}>
+                    <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`}>
 
                         <label htmlFor="" className={styled.next_form_label}>
                             <span className={`${styled.next_form_label_span} ${dayMoon ? styled.text_color : ""}`} >Your Name</span>

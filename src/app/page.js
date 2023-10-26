@@ -23,7 +23,7 @@ export default function Home() {
         dayMoon, openClose_1, openClose_2, openClose_3, openClose_4, openFolder_1, 
         openFolder_2, openFolder_3, openFolder_4, sendEmail,
         onChangeName, onChangeEmail, onChangeMessage, userName, userEmail, userMessage,
-        form, sendMail, portfolio_data
+        form, sendMail, portfolio_data,
     } = useTheme();
 
 
@@ -276,7 +276,7 @@ export default function Home() {
             <section className={styled.next_form_section}>
                 <div className="container-main">
                     {/* ref={form} */}
-                    <form action=""  onSubmit={sendEmail} className={` ${styled.next_form}  ${dayMoon ? styled.background_color : ""}`}>
+                    <form action=""  ref={form} onSubmit={sendMail} className={` ${styled.next_form}  ${dayMoon ? styled.background_color : ""}`}>
                         <label htmlFor="" className={styled.next_form_label}>
                             <span className={`${styled.next_form_label_span} ${dayMoon ? styled.text_color : ""}`} >Your Name</span>
                             <div className={styled.next_form_label_group}>
