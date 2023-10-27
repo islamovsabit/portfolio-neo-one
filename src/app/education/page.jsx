@@ -65,7 +65,7 @@ export default function Page() {
             <section className={styled.main}>
                 <div className="container-main">
                     <div className={styled.main_content}>
-                        <div className={styled.main_content_left}>
+                        <div className={styled.main_content_left} data-aos="fade-down-right" data-aos-duration="900">
                             <h2 className={`${styled.main_content_left_text_page_title} ${dayMoon ? styled.text_color : ""}`}>My Education Level</h2>
                             <p className={`${styled.main_content_left_text_page_text_one} ${dayMoon ? styled.text_color : ""}`}>Themesberg is an experienced and passionate group of designers, developers, project managers, writers and artists. Every client we work with becomes a part of the team. Together we face the challenges and celebrate the victories.</p>
                             <div className={styled.main_content_left_btn_group}>
@@ -73,7 +73,7 @@ export default function Page() {
                                 <button className={`${styled.main_content_left_btn} ${dayMoon ? styled.main_content_btn_active : ""}`}>Contact</button>
                             </div>
                         </div>
-                        <div className={styled.main_content_right}>
+                        <div className={styled.main_content_right} data-aos="fade-down-left" data-aos-duration="900">
                             <Image src={Images} alt="logo" className={`${styled.main_content_right_image} ${dayMoon ? styled.main_content_right_image_active : ""}`} />
                         </div>
                     </div>
@@ -82,13 +82,17 @@ export default function Page() {
             <section className={styled.architecture}>
                 <div className="container-main">
                     <div className={styled.architecture_content}>
+                        
+                        
+                        
+                        
                         <div className={styled.architecture_content_one}>
-                            <div className={`${styled.architecture_content_one_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-up">
+                            <div className={`${styled.architecture_content_one_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-down-right" data-aos-duration="900" data-aos-offset="200">
                                 <h6 className={`${styled.architecture_content_one_block_title} ${dayMoon ? styled.text_color : ""}`}>Title block</h6>
                                 <p className={`${styled.architecture_content_one_block_text} ${dayMoon ? styled.text_color : ""}`}>lorem impus is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{"'"}s standard.</p>
                             </div>
 
-                            <div className={styled.architecture_content_one_block}>
+                            <div className={styled.architecture_content_one_block} data-aos="fade-down-right" data-aos-duration="900" data-aos-offset="200">
                                 <span className={`${styled.architecture_content_one_block_span_text} ${dayMoon ? styled.text_color : ""}`}>
                                     2022.01.30
                                 </span>
@@ -97,12 +101,12 @@ export default function Page() {
                                 </span>
                             </div>
 
-                            <div className={`${styled.architecture_content_one_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-up">
+                            <div className={`${styled.architecture_content_one_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-down-right" data-aos-duration="900" data-aos-offset="200">
                                 <h6 className={`${styled.architecture_content_one_block_title} ${dayMoon ? styled.text_color : ""}`}>Title block</h6>
                                 <p className={`${styled.architecture_content_one_block_text} ${dayMoon ? styled.text_color : ""}`}>lorem impus is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{"'"}s standard.</p>
                             </div>
 
-                            <div className={styled.architecture_content_one_block}>
+                            <div className={styled.architecture_content_one_block} data-aos="fade-down-right" data-aos-duration="900" data-aos-offset="200">
                                 <span className={`${styled.architecture_content_one_block_span_text} ${dayMoon ? styled.text_color : ""}`}>
                                     2022.01.30
                                 </span>
@@ -112,10 +116,18 @@ export default function Page() {
                             </div>
                         </div>
 
-                        <div className={`${styled.architecture_content_two} ${dayMoon ? styled.shadow_inset_active : ""}`}></div>
+
+
+
+                        <div className={`${styled.architecture_content_two} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-offset="200"></div>
+
+
+
+
+
 
                         <div className={styled.architecture_content_three}>
-                            <div className={styled.architecture_content_three_block} data-aos="fade-up">
+                            <div className={styled.architecture_content_three_block} data-aos="fade-down-left" data-aos-duration="900" data-aos-offset="200">
                                 <span className={`${styled.architecture_content_three_block_span_icon} ${dayMoon ? styled.check_shadow_active : ""}`}>
                                     <ImCheckmark />
                                 </span>
@@ -124,12 +136,12 @@ export default function Page() {
                                 </span>
                             </div>
 
-                            <div className={`${styled.architecture_content_three_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-up">
+                            <div className={`${styled.architecture_content_three_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-down-left" data-aos-duration="900" data-aos-offset="200">
                                 <h6 className={`${styled.architecture_content_one_block_title} ${dayMoon ? styled.text_color : ""}`}>Title block</h6>
                                 <p className={`${styled.architecture_content_one_block_text} ${dayMoon ? styled.text_color : ""}`}>lorem impus is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{"'"}s standard.</p>
                             </div>
 
-                            <div className={styled.architecture_content_three_block} data-aos="fade-up">
+                            <div className={styled.architecture_content_three_block} data-aos="fade-down-left" data-aos-duration="900" data-aos-offset="200">
                                 <span className={`${styled.architecture_content_three_block_span_icon} ${dayMoon ? styled.check_shadow_active : ""}`}>
                                     <ImCheckmark />
                                 </span>
@@ -138,16 +150,21 @@ export default function Page() {
                                 </span>
                             </div>
 
-                            <div className={`${styled.architecture_content_three_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-up">
+                            <div className={`${styled.architecture_content_three_block} ${dayMoon ? styled.shadow_inset_active : ""}`} data-aos="fade-down-left" data-aos-duration="900" data-aos-offset="200">
                                 <h6 className={`${styled.architecture_content_one_block_title} ${dayMoon ? styled.text_color : ""}`}>Title block</h6>
                                 <p className={`${styled.architecture_content_one_block_text} ${dayMoon ? styled.text_color : ""}`}>lorem impus is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry{"'"}s standard.</p>
                             </div>
                         </div>
+                        
+                        
+                        
+                        
+                        
                     </div>
                 </div>
             </section>
-            <section className={styled.skills}>
-                <div className="container-main">
+            <section className={styled.skills} data-aos="fade-up" data-aos-duration="900">
+                <div className="container-main" >
                     <div className={`${styled.skills_content} ${dayMoon ? styled.background_color : ""}`}>
                         <h4 className={`${styled.skills_content_title} ${dayMoon ? styled.text_color : ""}`}>Skills</h4>
                         <ul className={styled.skills_content_list}>
@@ -216,7 +233,7 @@ export default function Page() {
 
                         {portfolio_data}
 
-                        <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`}>
+                        <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear" data-aos-delay="300">
                             <div className={`${styled.next_handler_content_list_item_more_blog}  ${dayMoon ? styled.main_content_box_shadow_inset_active : ""}`}>
                                 <Link href="/portfolio" className={`${styled.next_handler_content_list_item_more} ${dayMoon ? styled.main_content_btn_active : ""}`}>More</Link>
                             </div>
@@ -227,7 +244,7 @@ export default function Page() {
             </section>
             <section className={styled.next_form_section}>
                 <div className="container-main">
-                    <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`}>
+                    <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900">
 
                         <label htmlFor="" className={styled.next_form_label}>
                             <span className={`${styled.next_form_label_span} ${dayMoon ? styled.text_color : ""}`} >Your Name</span>

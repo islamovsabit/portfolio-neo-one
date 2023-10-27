@@ -134,7 +134,7 @@ export function ThemeProvider({ children }) {
         const formattedDate = format(parsedDate, "dd MMMM yyyy");
         const portfolio_text = truncateString(item.portfolio_text, 76)
         return (
-            <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`} key={item.id}>
+            <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`} key={item.id} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear" data-aos-delay="300">
                 <Image
                     alt=''
                     src={item.portfolio_img}

@@ -34,7 +34,7 @@ export default function Page() {
         <>
             <section className={styled.main}>
                 <div className="container-main">
-                    <div className={`${styled.main_content} ${dayMoon ? styled.background_color : ""}`}>
+                    <div className={`${styled.main_content} ${dayMoon ? styled.background_color : ""}`} data-aos="zoom-in-down" data-aos-duration="900">
                         <div className={`${styled.main_content_maps} ${dayMoon ? styled.shadow_inset_active : ""}`}>
                             <Iframe
                                 some
@@ -44,7 +44,7 @@ export default function Page() {
                             />
                         </div>
                     </div>
-                    <div className={`${styled.main_get_touch} ${dayMoon ? styled.background_color : ""}`}>
+                    <div className={`${styled.main_get_touch} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                         <h4 className={`${styled.main_get_touch_title} ${dayMoon ? styled.text_color : ""}`}>Get in touch today</h4>
                         <ul className={styled.main_get_touch_list}>
 
@@ -102,7 +102,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className={styled.next_form_section}>
+            <section className={styled.next_form_section} data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                 <div className="container-main">
                     <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`}>
 

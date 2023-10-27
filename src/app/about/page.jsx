@@ -64,12 +64,14 @@ export default function Page() {
             </li>
         )
     })
-
+    
+    // data-aos-delay="300"
+    
     return (
         <>
             <section className={styled.main}>
                 <div className="container-main">
-                    <div className={styled.main_content}>
+                    <div className={styled.main_content} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear" >
                         <div className={`${styled.main_content_left_logo_page} ${dayMoon ? styled.box_2x_shadow : ""}`}>
                             <Image src={logo} sizes={false} alt="logo" className={styled.main_content_left_logo_page_image} fill />
                         </div>
@@ -85,7 +87,7 @@ export default function Page() {
             </section>
             <section className={styled.biography}>
                 <div className="container-main">
-                    <div className={`${styled.biography_content} ${dayMoon ? styled.background_color : ""}`}>
+                    <div className={`${styled.biography_content} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear">
                         <h4 className={`${styled.biography_content_title} ${dayMoon ? styled.text_color : ""}`}>Biography</h4>
                         <ul className={styled.biography_content_list}>
                             {biography_content}
@@ -135,7 +137,7 @@ export default function Page() {
             <section className={styled.next_handler}>
                 <div className="container-main">
                     <div className={styled.next_handler_content}>{portfolio_data}
-                        <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`}>
+                        <div className={`${styled.next_handler_content_list_item} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear" data-aos-delay="300">
                             <div className={`${styled.next_handler_content_list_item_more_blog}  ${dayMoon ? styled.main_content_box_shadow_inset_active : ""}`}>
                                 <Link href="/portfolio" className={`${styled.next_handler_content_list_item_more} ${dayMoon ? styled.main_content_btn_active : ""}`}>More</Link>
                             </div>
@@ -146,7 +148,7 @@ export default function Page() {
             </section>
             <section className={styled.next_form_section}>
                 <div className="container-main">
-                    <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`}>
+                    <form action="" ref={form} onSubmit={sendMail} className={`${styled.next_form} ${dayMoon ? styled.background_color : ""}`} data-aos="fade-up" data-aos-duration="900" data-aos-easing="linear" data-aos-delay="300">
 
                         <label htmlFor="" className={styled.next_form_label}>
                             <span className={`${styled.next_form_label_span} ${dayMoon ? styled.text_color : ""}`} >Your Name</span>
