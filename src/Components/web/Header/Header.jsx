@@ -60,7 +60,7 @@ export default function Header() {
                                 <BiMoon className={`${styled.main_content_right_btn_theme_moon} ${dayMoon ? styled.theme_moon_active : ""}`} />
                             </div>
                         </button>
-                        <a href='https://bilmer-library.vercel.app/' target="_blank" className={`${styled.main_content_right_btn_library} ${dayMoon ? styled.library_link_active : ""}`}>
+                        <a href='https://project-bilmer-library.vercel.app/' target="_blank" className={`${styled.main_content_right_btn_library} ${dayMoon ? styled.library_link_active : ""}`}>
                             Library
                         </a>
                     </div>

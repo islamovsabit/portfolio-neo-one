@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default async function Page() {
-  return (
-    <div>
-      Service Page
-    </div>
-  )
+export default function page() {
+    return (
+        <div>
+
+        </div>
+    )
 }

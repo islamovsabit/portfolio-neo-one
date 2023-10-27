@@ -517,7 +517,6 @@
 
 /* active */
 
-
 .main_content_btn_active {
     background: $background_night;
     color: $color_night;
@@ -527,40 +526,29 @@
         box-shadow: $box_inset_shadow_night;
     }
 }
-
 .next_handler_content_list_item_title_blog_circle_active {
     border-color: $color_night;
 }
-
-
 .main_content_welcome_text_active {
     color: $color_night;
 }
-
-
 .background_color {
     background-color: $background_night;
     box-shadow: $box_shadow_night;
 }
-
 .background_color_plus {
     background-color: $background_night;
     box-shadow: $box_shadow_night;
     border-color: #0D0E12;
 }
-
 .text_color {
     color: $color_night;
 }
-
 .text_color_plus {
     color: $color_night;
     // background: $background_night;
     border-color: #3C3D47;
 }
-
-
-
 .next_handler_open {
     height: 191px;
 
@@ -568,19 +556,14 @@
         transform: rotate(-90deg);
     }
 }
-
-
-
 .main_content_box_shadow_inset_active {
     background-color: $background_night;
     box-shadow: $box_inset_shadow_night;
 }
-
 .shadow_inset_active {
     background-color: $background_night;
     box-shadow: $box_inset_shadow_night;
 }
-
 .shadow_inset_active_plus {
     box-shadow: $box_inset_shadow_night;
     color: $color_night;
